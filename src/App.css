@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+
+}
+
+body {
+  background: url("https://media-cdn.tripadvisor.com/media/photo-s/06/f2/38/20/beth-s-farm-market.jpg");
+}
+
+.pTag {
+  font-size: 52px;
+  background-color: #f9ea8f;
+  background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
 }
 
 .App-logo {
@@ -34,5 +45,84 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* POP UP DUDE */
+
+:root {
+  --mainColor: black;
+}
+
+/* body {
+  align-items: center;
+  background-color: #0E0F11;
+  color: #fff;
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+p {
+  grid-column: 2;
+}
+
+a {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+a::before {
+  content: '';
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQHoOKIZZyfiIg/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=MIWGNOW3qDYwLOb5zWBZ3qd4hofcw93tumcE5hBU_Us');
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  bottom: 0vh;
+  width: 100vw;
+  transform: translateY(100%);
+  transition: transform .3s;
+  animation: App-logo-spin infinite 20s linear;
+
+}
+
+a:hover::before {
+  transform: translateY(0px);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    grid-template-columns: 250px 2fr .5em;
+  }
+
+  a::before {
+    background-position: 0;
+    background-size: 250px;
+    height: 200px;
+    transform: translateY(200px);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    grid-template-columns: 350px 2fr 15px;
+  }
+
+  a::before {
+    background-size: 300px;
+    height: 250px;
+    transform: translateY(250px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
   }
 }

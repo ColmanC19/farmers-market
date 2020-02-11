@@ -1,0 +1,22 @@
+.produceCss {
+  display: inline-block;
+  border: solid;
+  padding: 20px;
+  margin: 5px;
+  background-color: #f9ea8f;
+  background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.hidden {
+  width: 300px;
+  height: 300px;
+  background: inherit;
+  transition: width 2s ease, height 2s ease;
+}
+
+.visable:hover {
+  width: 350px;
+  height: 350px;
+}

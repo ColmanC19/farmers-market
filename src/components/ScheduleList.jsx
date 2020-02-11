@@ -2,9 +2,8 @@ import React from "react";
 import Schedule from "./Schedule";
 
 const marketSchedule = [
-
   {
-        day: "Sunday",
+    day: "Sunday",
     location: "Lents International",
     hours: "9:00am - 2:00pm",
     booth: "4A"
